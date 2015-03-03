@@ -45,7 +45,7 @@ public class CarlanaServerHTTP {
             BufferedInputStream bis = new BufferedInputStream(fis);
             bis.read(bytearray, 0, bytearray.length);
 
-            // ok, we are ready to send the response.
+            
             t.sendResponseHeaders(200, file.length());
             OutputStream os = t.getResponseBody();
             os.write(bytearray,0,bytearray.length);
