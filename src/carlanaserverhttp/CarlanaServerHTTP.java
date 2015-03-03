@@ -39,8 +39,7 @@ public class CarlanaServerHTTP {
             os.close();
             */
             
-            // a PDF (you provide your own!)
-            File file = new File ("/home/todos/alunos/ct/a1559648/NetBeansProjects/www/index.html");
+            File file = new File ("www/index.html");
             byte [] bytearray  = new byte [(int)file.length()];
             FileInputStream fis = new FileInputStream(file);
             BufferedInputStream bis = new BufferedInputStream(fis);
