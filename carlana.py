@@ -9,5 +9,5 @@ Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
 httpd = SocketServer.TCPServer(("", PORTA), Handler)
 
-print "Servidor criado na prota:", PORTA
+print "Servidor criado na porta:", PORTA
 httpd.serve_forever()
